@@ -77,9 +77,9 @@
             // 必填，表示是未登录模式
             identityless: true,
             // 资源方 AppID
-            resourceAppid: '小程序 AppID', // <!-- replace -->
+            resourceAppid: 'wx764ad86f6839e82d', // <!-- replace -->
             // 资源方环境 ID
-            resourceEnv: '云开发环境 ID', // <!-- replace -->
+            // resourceEnv: '云开发环境 ID', // <!-- replace -->
           })
           await c.init()
           window.c = c
@@ -111,8 +111,10 @@
         if (onBeforeJump) {
           onBeforeJump()
         }
+
         location.href = res.result.openlink
       }
+      openWeapp()
     </script>
     <style>
       .hidden {
